@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the PackageMeta.fromSdk constructor from the Class PackageMeta class from the dartdoc library, for the Dart programming language.">
+  <title>PackageMeta.fromSdk constructor - PackageMeta class - dartdoc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">dartdoc</a></li>
+    <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    <li><a href="dartdoc/PackageMeta-class.html">PackageMeta</a></li>
+    <li class="self-crumb">factory constructor PackageMeta.fromSdk</li>
+  </ol>
+  <div class="self-name">PackageMeta.fromSdk</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>class PackageMeta</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/PackageMeta-class.html#constructors">Constructors</a></li>
+      <li><a href="dartdoc/PackageMeta/PackageMeta.html">PackageMeta</a></li>
+      <li><a href="dartdoc/PackageMeta/PackageMeta.fromDir.html">fromDir</a></li>
+      <li><a href="dartdoc/PackageMeta/PackageMeta.fromSdk.html">fromSdk</a></li>
+    
+      <li class="section-title">
+        <a href="dartdoc/PackageMeta-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="dartdoc/PackageMeta/description.html">description</a></li>
+      <li><a href="dartdoc/PackageMeta/dir.html">dir</a></li>
+      <li><a href="dartdoc/PackageMeta/homepage.html">homepage</a></li>
+      <li><a href="dartdoc/PackageMeta/isSdk.html">isSdk</a></li>
+      <li><a href="dartdoc/PackageMeta/isValid.html">isValid</a></li>
+      <li><a href="dartdoc/PackageMeta/name.html">name</a></li>
+      <li><a href="dartdoc/PackageMeta/needsPubGet.html">needsPubGet</a></li>
+      <li><a href="dartdoc/PackageMeta/resolvedDir.html">resolvedDir</a></li>
+      <li><a href="dartdoc/PackageMeta/useCategories.html">useCategories</a></li>
+      <li><a href="dartdoc/PackageMeta/version.html">version</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="dartdoc/PackageMeta-class.html#instance-methods">Methods</a></li>
+      <li><a href="dartdoc/PackageMeta/getChangelogContents.html">getChangelogContents</a></li>
+      <li><a href="dartdoc/PackageMeta/getInvalidReasons.html">getInvalidReasons</a></li>
+      <li><a href="dartdoc/PackageMeta/getLicenseContents.html">getLicenseContents</a></li>
+      <li><a href="dartdoc/PackageMeta/getReadmeContents.html">getReadmeContents</a></li>
+      <li><a href="dartdoc/PackageMeta/runPubGet.html">runPubGet</a></li>
+      <li><a href="dartdoc/PackageMeta/toString.html">toString</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="dartdoc/PackageMeta-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-left-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <section class="multi-line-signature">
+      
+            <span class="name ">PackageMeta.fromSdk</span>(<wbr><span class="parameter" id="fromSdk-param-sdkDir"><span class="type-annotation">Directory</span> <span class="parameter-name">sdkDir</span>, {</span> <span class="parameter" id="fromSdk-param-sdkReadmePath"><span class="type-annotation">String</span> <span class="parameter-name">sdkReadmePath</span>, </span> <span class="parameter" id="fromSdk-param-useCategories"><span class="type-annotation">bool</span> <span class="parameter-name">useCategories</span></span> })
+    </section>
+
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre class="prettyprint language-dart">factory PackageMeta.fromSdk(Directory sdkDir,
+        {String sdkReadmePath, bool useCategories}) =&gt;
+    new _SdkMeta(sdkDir,
+        sdkReadmePath: sdkReadmePath, useCategories: useCategories);</pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>constructor PackageMeta.fromSdk</h5>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

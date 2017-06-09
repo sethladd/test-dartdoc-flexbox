@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Config class from the dartdoc library, for the Dart programming language.">
+  <title>Config class - dartdoc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">dartdoc</a></li>
+    <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    <li class="self-crumb">class Config</li>
+  </ol>
+  <div class="self-name">Config</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>library dartdoc</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#classes">Classes</a></li>
+      <li><a href="dartdoc/Accessor-class.html">Accessor</a></li>
+      <li><a href="dartdoc/Class-class.html">Class</a></li>
+      <li><a href="dartdoc/Config-class.html">Config</a></li>
+      <li><a href="dartdoc/Constructor-class.html">Constructor</a></li>
+      <li><a href="dartdoc/DartDoc-class.html">DartDoc</a></li>
+      <li><a href="dartdoc/DartDocFailure-class.html">DartDocFailure</a></li>
+      <li><a href="dartdoc/DartDocResults-class.html">DartDocResults</a></li>
+      <li><a href="dartdoc/Documentable-class.html">Documentable</a></li>
+      <li><a href="dartdoc/Dynamic-class.html">Dynamic</a></li>
+      <li><a href="dartdoc/ElementType-class.html">ElementType</a></li>
+      <li><a href="dartdoc/EnclosedElement-class.html">EnclosedElement</a></li>
+      <li><a href="dartdoc/Enum-class.html">Enum</a></li>
+      <li><a href="dartdoc/EnumField-class.html">EnumField</a></li>
+      <li><a href="dartdoc/Field-class.html">Field</a></li>
+      <li><a href="dartdoc/FileContents-class.html">FileContents</a></li>
+      <li><a href="dartdoc/Generator-class.html">Generator</a></li>
+      <li><a href="dartdoc/GetterSetterCombo-class.html">GetterSetterCombo</a></li>
+      <li><a href="dartdoc/Inheritable-class.html">Inheritable</a></li>
+      <li><a href="dartdoc/Library-class.html">Library</a></li>
+      <li><a href="dartdoc/Locatable-class.html">Locatable</a></li>
+      <li><a href="dartdoc/Method-class.html">Method</a></li>
+      <li><a href="dartdoc/ModelElement-class.html">ModelElement</a></li>
+      <li><a href="dartdoc/ModelFunction-class.html">ModelFunction</a></li>
+      <li><a href="dartdoc/Nameable-class.html">Nameable</a></li>
+      <li><a href="dartdoc/Operator-class.html">Operator</a></li>
+      <li><a href="dartdoc/Package-class.html">Package</a></li>
+      <li><a href="dartdoc/PackageCategory-class.html">PackageCategory</a></li>
+      <li><a href="dartdoc/PackageMeta-class.html">PackageMeta</a></li>
+      <li><a href="dartdoc/PackageWarningCounter-class.html">PackageWarningCounter</a></li>
+      <li><a href="dartdoc/PackageWarningOptions-class.html">PackageWarningOptions</a></li>
+      <li><a href="dartdoc/Parameter-class.html">Parameter</a></li>
+      <li><a href="dartdoc/SourceCodeMixin-class.html">SourceCodeMixin</a></li>
+      <li><a href="dartdoc/TopLevelVariable-class.html">TopLevelVariable</a></li>
+      <li><a href="dartdoc/Typedef-class.html">Typedef</a></li>
+      <li><a href="dartdoc/TypeParameter-class.html">TypeParameter</a></li>
+      <li><a href="dartdoc/Warnable-class.html">Warnable</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#constants">Constants</a></li>
+      <li><a href="dartdoc/featureOrder-constant.html">featureOrder</a></li>
+      <li><a href="dartdoc/name-constant.html">name</a></li>
+      <li><a href="dartdoc/version-constant.html">version</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#properties">Properties</a></li>
+      <li><a href="dartdoc/config.html">config</a></li>
+      <li><a href="dartdoc/defaultOutDir.html">defaultOutDir</a></li>
+      <li><a href="dartdoc/packageWarningText.html">packageWarningText</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#functions">Functions</a></li>
+      <li><a href="dartdoc/byFeatureOrdering.html">byFeatureOrdering</a></li>
+      <li><a href="dartdoc/byName.html">byName</a></li>
+      <li><a href="dartdoc/getSdkDir.html">getSdkDir</a></li>
+      <li><a href="dartdoc/initGenerators.html">initGenerators</a></li>
+      <li><a href="dartdoc/setConfig.html">setConfig</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#enums">Enums</a></li>
+      <li><a href="dartdoc/PackageWarning-class.html">PackageWarning</a></li>
+    
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="addCrossdart" class="property">
+          <span class="name"><a href="dartdoc/Config/addCrossdart.html">addCrossdart</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="autoIncludeDependencies" class="property">
+          <span class="name"><a href="dartdoc/Config/autoIncludeDependencies.html">autoIncludeDependencies</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="categoryOrder" class="property">
+          <span class="name"><a href="dartdoc/Config/categoryOrder.html">categoryOrder</a></span>
+          <span class="signature">&#8594; List&lt;String&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="examplePathPrefix" class="property">
+          <span class="name"><a href="dartdoc/Config/examplePathPrefix.html">examplePathPrefix</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="includeSource" class="property">
+          <span class="name"><a href="dartdoc/Config/includeSource.html">includeSource</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="inputDir" class="property">
+          <span class="name"><a href="dartdoc/Config/inputDir.html">inputDir</a></span>
+          <span class="signature">&#8594; Directory</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="sdkVersion" class="property">
+          <span class="name"><a href="dartdoc/Config/sdkVersion.html">sdkVersion</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="showWarnings" class="property">
+          <span class="name"><a href="dartdoc/Config/showWarnings.html">showWarnings</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="dartdoc/Config/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          The hash code for this object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dartdoc/Config/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dartdoc/Config/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="dartdoc/Config/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="dartdoc/Config/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The equality operator.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>class Config</h5>
+    <ol>
+    
+      <li class="section-title">
+        <a href="dartdoc/Config-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="dartdoc/Config/addCrossdart.html">addCrossdart</a></li>
+      <li><a href="dartdoc/Config/autoIncludeDependencies.html">autoIncludeDependencies</a></li>
+      <li><a href="dartdoc/Config/categoryOrder.html">categoryOrder</a></li>
+      <li><a href="dartdoc/Config/examplePathPrefix.html">examplePathPrefix</a></li>
+      <li><a href="dartdoc/Config/includeSource.html">includeSource</a></li>
+      <li><a href="dartdoc/Config/inputDir.html">inputDir</a></li>
+      <li><a href="dartdoc/Config/sdkVersion.html">sdkVersion</a></li>
+      <li><a href="dartdoc/Config/showWarnings.html">showWarnings</a></li>
+      <li class="inherited"><a href="dartdoc/Config/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dartdoc/Config/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title inherited"><a href="dartdoc/Config-class.html#instance-methods">Methods</a></li>
+      <li class="inherited"><a href="dartdoc/Config/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dartdoc/Config/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="dartdoc/Config-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dartdoc/Config/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

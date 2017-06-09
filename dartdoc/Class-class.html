@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the Class class from the dartdoc library, for the Dart programming language.">
+  <title>Class class - dartdoc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">dartdoc</a></li>
+    <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    <li class="self-crumb">class Class</li>
+  </ol>
+  <div class="self-name">Class</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>library dartdoc</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#classes">Classes</a></li>
+      <li><a href="dartdoc/Accessor-class.html">Accessor</a></li>
+      <li><a href="dartdoc/Class-class.html">Class</a></li>
+      <li><a href="dartdoc/Config-class.html">Config</a></li>
+      <li><a href="dartdoc/Constructor-class.html">Constructor</a></li>
+      <li><a href="dartdoc/DartDoc-class.html">DartDoc</a></li>
+      <li><a href="dartdoc/DartDocFailure-class.html">DartDocFailure</a></li>
+      <li><a href="dartdoc/DartDocResults-class.html">DartDocResults</a></li>
+      <li><a href="dartdoc/Documentable-class.html">Documentable</a></li>
+      <li><a href="dartdoc/Dynamic-class.html">Dynamic</a></li>
+      <li><a href="dartdoc/ElementType-class.html">ElementType</a></li>
+      <li><a href="dartdoc/EnclosedElement-class.html">EnclosedElement</a></li>
+      <li><a href="dartdoc/Enum-class.html">Enum</a></li>
+      <li><a href="dartdoc/EnumField-class.html">EnumField</a></li>
+      <li><a href="dartdoc/Field-class.html">Field</a></li>
+      <li><a href="dartdoc/FileContents-class.html">FileContents</a></li>
+      <li><a href="dartdoc/Generator-class.html">Generator</a></li>
+      <li><a href="dartdoc/GetterSetterCombo-class.html">GetterSetterCombo</a></li>
+      <li><a href="dartdoc/Inheritable-class.html">Inheritable</a></li>
+      <li><a href="dartdoc/Library-class.html">Library</a></li>
+      <li><a href="dartdoc/Locatable-class.html">Locatable</a></li>
+      <li><a href="dartdoc/Method-class.html">Method</a></li>
+      <li><a href="dartdoc/ModelElement-class.html">ModelElement</a></li>
+      <li><a href="dartdoc/ModelFunction-class.html">ModelFunction</a></li>
+      <li><a href="dartdoc/Nameable-class.html">Nameable</a></li>
+      <li><a href="dartdoc/Operator-class.html">Operator</a></li>
+      <li><a href="dartdoc/Package-class.html">Package</a></li>
+      <li><a href="dartdoc/PackageCategory-class.html">PackageCategory</a></li>
+      <li><a href="dartdoc/PackageMeta-class.html">PackageMeta</a></li>
+      <li><a href="dartdoc/PackageWarningCounter-class.html">PackageWarningCounter</a></li>
+      <li><a href="dartdoc/PackageWarningOptions-class.html">PackageWarningOptions</a></li>
+      <li><a href="dartdoc/Parameter-class.html">Parameter</a></li>
+      <li><a href="dartdoc/SourceCodeMixin-class.html">SourceCodeMixin</a></li>
+      <li><a href="dartdoc/TopLevelVariable-class.html">TopLevelVariable</a></li>
+      <li><a href="dartdoc/Typedef-class.html">Typedef</a></li>
+      <li><a href="dartdoc/TypeParameter-class.html">TypeParameter</a></li>
+      <li><a href="dartdoc/Warnable-class.html">Warnable</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#constants">Constants</a></li>
+      <li><a href="dartdoc/featureOrder-constant.html">featureOrder</a></li>
+      <li><a href="dartdoc/name-constant.html">name</a></li>
+      <li><a href="dartdoc/version-constant.html">version</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#properties">Properties</a></li>
+      <li><a href="dartdoc/config.html">config</a></li>
+      <li><a href="dartdoc/defaultOutDir.html">defaultOutDir</a></li>
+      <li><a href="dartdoc/packageWarningText.html">packageWarningText</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#functions">Functions</a></li>
+      <li><a href="dartdoc/byFeatureOrdering.html">byFeatureOrdering</a></li>
+      <li><a href="dartdoc/byName.html">byName</a></li>
+      <li><a href="dartdoc/getSdkDir.html">getSdkDir</a></li>
+      <li><a href="dartdoc/initGenerators.html">initGenerators</a></li>
+      <li><a href="dartdoc/setConfig.html">setConfig</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#enums">Enums</a></li>
+      <li><a href="dartdoc/PackageWarning-class.html">PackageWarning</a></li>
+    
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+    <section>
+      <dl class="dl-horizontal">
+        <dt>Inheritance</dt>
+        <dd><ul class="gt-separated dark clazz-relationships">
+          <li>Object</li>
+          <li><a href="dartdoc/ModelElement-class.html">ModelElement</a></li>
+          <li>Class</li>
+        </ul></dd>
+
+        <dt>Implements</dt>
+        <dd>
+          <ul class="comma-separated clazz-relationships">
+            <li><a href="dartdoc/EnclosedElement-class.html">EnclosedElement</a></li>
+          </ul>
+        </dd>
+
+
+        <dt>Implemented by</dt>
+        <dd><ul class="comma-separated clazz-relationships">
+          <li><a href="dartdoc/Enum-class.html">Enum</a></li>
+        </ul></dd>
+
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="Class" class="callable">
+          <span class="name"><a href="dartdoc/Class/Class.html">Class</a></span><span class="signature">(<span class="parameter" id="-param-element"><span class="type-annotation">ClassElement</span> <span class="parameter-name">element</span>, </span> <span class="parameter" id="-param-library"><span class="type-annotation"><a href="dartdoc/Library-class.html">Library</a></span> <span class="parameter-name">library</span></span>)</span>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="allCanonicalModelElements" class="property">
+          <span class="name"><a href="dartdoc/Class/allCanonicalModelElements.html">allCanonicalModelElements</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ModelElement-class.html">ModelElement</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allInstanceMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/allInstanceMethods.html">allInstanceMethods</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Method-class.html">Method</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allInstanceMethodsInherited" class="property">
+          <span class="name"><a href="dartdoc/Class/allInstanceMethodsInherited.html">allInstanceMethodsInherited</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allInstanceProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/allInstanceProperties.html">allInstanceProperties</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Field-class.html">Field</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allInstancePropertiesInherited" class="property">
+          <span class="name"><a href="dartdoc/Class/allInstancePropertiesInherited.html">allInstancePropertiesInherited</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allModelElements" class="property">
+          <span class="name"><a href="dartdoc/Class/allModelElements.html">allModelElements</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ModelElement-class.html">ModelElement</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allOperators" class="property">
+          <span class="name"><a href="dartdoc/Class/allOperators.html">allOperators</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Operator-class.html">Operator</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allOperatorsInherited" class="property">
+          <span class="name"><a href="dartdoc/Class/allOperatorsInherited.html">allOperatorsInherited</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="constants" class="property">
+          <span class="name"><a href="dartdoc/Class/constants.html">constants</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Field-class.html">Field</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="constructors" class="property">
+          <span class="name"><a href="dartdoc/Class/constructors.html">constructors</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Constructor-class.html">Constructor</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="enclosingElement" class="property">
+          <span class="name"><a href="dartdoc/Class/enclosingElement.html">enclosingElement</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/ModelElement-class.html">ModelElement</a></span>
+        </dt>
+        <dd>
+          Returns the library that encloses this element.
+          <div class="features">@override, read-only</div>
+</dd>
+        <dt id="fileName" class="property">
+          <span class="name"><a href="dartdoc/Class/fileName.html">fileName</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="fullkind" class="property">
+          <span class="name"><a href="dartdoc/Class/fullkind.html">fullkind</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasConstants" class="property">
+          <span class="name"><a href="dartdoc/Class/hasConstants.html">hasConstants</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasConstructors" class="property">
+          <span class="name"><a href="dartdoc/Class/hasConstructors.html">hasConstructors</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasImplementors" class="property">
+          <span class="name"><a href="dartdoc/Class/hasImplementors.html">hasImplementors</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasInheritedMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/hasInheritedMethods.html">hasInheritedMethods</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasInstanceMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/hasInstanceMethods.html">hasInstanceMethods</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasInstanceProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/hasInstanceProperties.html">hasInstanceProperties</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasInterfaces" class="property">
+          <span class="name"><a href="dartdoc/Class/hasInterfaces.html">hasInterfaces</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/hasMethods.html">hasMethods</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasMixins" class="property">
+          <span class="name"><a href="dartdoc/Class/hasMixins.html">hasMixins</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasModifiers" class="property">
+          <span class="name"><a href="dartdoc/Class/hasModifiers.html">hasModifiers</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasOperators" class="property">
+          <span class="name"><a href="dartdoc/Class/hasOperators.html">hasOperators</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/hasProperties.html">hasProperties</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasStaticMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/hasStaticMethods.html">hasStaticMethods</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasStaticProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/hasStaticProperties.html">hasStaticProperties</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hasSupertype" class="property">
+          <span class="name"><a href="dartdoc/Class/hasSupertype.html">hasSupertype</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="href" class="property">
+          <span class="name"><a href="dartdoc/Class/href.html">href</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">@override, read-only</div>
+</dd>
+        <dt id="implementors" class="property">
+          <span class="name"><a href="dartdoc/Class/implementors.html">implementors</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Class-class.html">Class</a>&gt;</span>
+        </dt>
+        <dd>
+          Returns all the implementors of the class specified.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="inheritanceChain" class="property">
+          <span class="name"><a href="dartdoc/Class/inheritanceChain.html">inheritanceChain</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Class-class.html">Class</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="inheritedMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/inheritedMethods.html">inheritedMethods</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Method-class.html">Method</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="inheritedOperators" class="property">
+          <span class="name"><a href="dartdoc/Class/inheritedOperators.html">inheritedOperators</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Operator-class.html">Operator</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="inheritedProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/inheritedProperties.html">inheritedProperties</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Field-class.html">Field</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="instanceMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/instanceMethods.html">instanceMethods</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Method-class.html">Method</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="instanceProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/instanceProperties.html">instanceProperties</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Field-class.html">Field</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="interfaces" class="property">
+          <span class="name"><a href="dartdoc/Class/interfaces.html">interfaces</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="isAbstract" class="property">
+          <span class="name"><a href="dartdoc/Class/isAbstract.html">isAbstract</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="isCanonical" class="property">
+          <span class="name"><a href="dartdoc/Class/isCanonical.html">isCanonical</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">@override, read-only</div>
+</dd>
+        <dt id="isErrorOrException" class="property">
+          <span class="name"><a href="dartdoc/Class/isErrorOrException.html">isErrorOrException</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="kind" class="property">
+          <span class="name"><a href="dartdoc/Class/kind.html">kind</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">@override, read-only</div>
+</dd>
+        <dt id="methodsForPages" class="property">
+          <span class="name"><a href="dartdoc/Class/methodsForPages.html">methodsForPages</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Method-class.html">Method</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="mixins" class="property">
+          <span class="name"><a href="dartdoc/Class/mixins.html">mixins</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="mixinsRaw" class="property">
+          <span class="name"><a href="dartdoc/Class/mixinsRaw.html">mixinsRaw</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="nameWithGenerics" class="property">
+          <span class="name"><a href="dartdoc/Class/nameWithGenerics.html">nameWithGenerics</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">@override, read-only</div>
+</dd>
+        <dt id="operators" class="property">
+          <span class="name"><a href="dartdoc/Class/operators.html">operators</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Operator-class.html">Operator</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="operatorsForPages" class="property">
+          <span class="name"><a href="dartdoc/Class/operatorsForPages.html">operatorsForPages</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Operator-class.html">Operator</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="propertiesForPages" class="property">
+          <span class="name"><a href="dartdoc/Class/propertiesForPages.html">propertiesForPages</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Field-class.html">Field</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="staticMethods" class="property">
+          <span class="name"><a href="dartdoc/Class/staticMethods.html">staticMethods</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Method-class.html">Method</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="staticProperties" class="property">
+          <span class="name"><a href="dartdoc/Class/staticProperties.html">staticProperties</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Field-class.html">Field</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="superChain" class="property">
+          <span class="name"><a href="dartdoc/Class/superChain.html">superChain</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="superChainRaw" class="property">
+          <span class="name"><a href="dartdoc/Class/superChainRaw.html">superChainRaw</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="superChainRawReversed" class="property">
+          <span class="name"><a href="dartdoc/Class/superChainRawReversed.html">superChainRawReversed</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="superChainReversed" class="property">
+          <span class="name"><a href="dartdoc/Class/superChainReversed.html">superChainReversed</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="supertype" class="property">
+          <span class="name"><a href="dartdoc/Class/supertype.html">supertype</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/ElementType-class.html">ElementType</a></span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="allParameters" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/allParameters.html">allParameters</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Parameter-class.html">Parameter</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="annotations" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/annotations.html">annotations</a></span>
+          <span class="signature">&#8594; List&lt;String&gt;</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="canHaveParameters" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/canHaveParameters.html">canHaveParameters</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="canonicalLibrary" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/canonicalLibrary.html">canonicalLibrary</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/Library-class.html">Library</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="definingLibrary" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/definingLibrary.html">definingLibrary</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/Library-class.html">Library</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="documentation" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/documentation.html">documentation</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          Returns the docs, stripped of their leading comments syntax.
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="documentationAsHtml" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/documentationAsHtml.html">documentationAsHtml</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="documentationFrom" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/documentationFrom.html">documentationFrom</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/ModelElement-class.html">ModelElement</a></span>
+        </dt>
+        <dd class="inherited">
+          Returns the ModelElement from which we will get documentation.
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="element" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/element.html">element</a></span>
+          <span class="signature">&#8594; Element</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="elementLocation" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/elementLocation.html">elementLocation</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="exportedInLibraries" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/exportedInLibraries.html">exportedInLibraries</a></span>
+          <span class="signature">&#8594; Set&lt;<a href="dartdoc/Library-class.html">Library</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="features" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/features.html">features</a></span>
+          <span class="signature">&#8594; Set&lt;String&gt;</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="featuresAsString" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/featuresAsString.html">featuresAsString</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="fullyQualifiedName" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/fullyQualifiedName.html">fullyQualifiedName</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          Returns the fully qualified name.
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="fullyQualifiedNameWithoutLibrary" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/fullyQualifiedNameWithoutLibrary.html">fullyQualifiedNameWithoutLibrary</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="genericParameters" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/genericParameters.html">genericParameters</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hasAnnotations" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/hasAnnotations.html">hasAnnotations</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hasDocumentation" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/hasDocumentation.html">hasDocumentation</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="hasExtendedDocumentation" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/hasExtendedDocumentation.html">hasExtendedDocumentation</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          The hash code for this object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="hasParameters" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/hasParameters.html">hasParameters</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="htmlId" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/htmlId.html">htmlId</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isAsynchronous" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isAsynchronous.html">isAsynchronous</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isConst" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isConst.html">isConst</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isDeprecated" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isDeprecated.html">isDeprecated</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isExecutable" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isExecutable.html">isExecutable</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isFinal" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isFinal.html">isFinal</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isLocalElement" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isLocalElement.html">isLocalElement</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isPropertyAccessor" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isPropertyAccessor.html">isPropertyAccessor</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isPropertyInducer" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isPropertyInducer.html">isPropertyInducer</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="isStatic" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/isStatic.html">isStatic</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="library" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/library.html">library</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/Library-class.html">Library</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="lineAndColumn" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/lineAndColumn.html">lineAndColumn</a></span>
+          <span class="signature">&#8594; Tuple2&lt;int, int&gt;</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="linkedName" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/linkedName.html">linkedName</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="linkedParamsLines" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/linkedParamsLines.html">linkedParamsLines</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="linkedParamsNoMetadata" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/linkedParamsNoMetadata.html">linkedParamsNoMetadata</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="linkedParamsNoMetadataOrNames" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/linkedParamsNoMetadataOrNames.html">linkedParamsNoMetadataOrNames</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="modelType" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/modelType.html">modelType</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/ElementType-class.html">ElementType</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="name" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/name.html">name</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="oneLineDoc" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/oneLineDoc.html">oneLineDoc</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="overriddenDepth" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/overriddenDepth.html">overriddenDepth</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="overriddenDocumentedElement" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/overriddenDocumentedElement.html">overriddenDocumentedElement</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/ModelElement-class.html">ModelElement</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="overriddenElement" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/overriddenElement.html">overriddenElement</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/ModelElement-class.html">ModelElement</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="package" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/package.html">package</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/Package-class.html">Package</a></span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">@override, read-only, inherited</div>
+</dd>
+        <dt id="parameters" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/parameters.html">parameters</a></span>
+          <span class="signature">&#8594; List&lt;<a href="dartdoc/Parameter-class.html">Parameter</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="sourceFileName" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/sourceFileName.html">sourceFileName</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="usedElements" class="property inherited">
+          <span class="name"><a href="dartdoc/ModelElement/usedElements.html">usedElements</a></span>
+          <span class="signature">&#8594; Iterable&lt;<a href="dartdoc/ModelElement-class.html">ModelElement</a>&gt;</span>
+        </dt>
+        <dd class="inherited">
+          Gather all the used elements, from the parameters and return type, for example
+E.g. method <code>Iterable<string> blah(List<int> foo)</int></string></code> will return
+<code><code>Iterable, String, List, int</code></code>
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="contains" class="callable">
+          <span class="name"><a href="dartdoc/Class/contains.html">contains</a></span><span class="signature">(<wbr><span class="parameter" id="contains-param-element"><span class="type-annotation">Element</span> <span class="parameter-name">element</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="filterNonPublicTypes" class="callable">
+          <span class="name"><a href="dartdoc/Class/filterNonPublicTypes.html">filterNonPublicTypes</a></span><span class="signature">(<wbr><span class="parameter" id="filterNonPublicTypes-param-rawTypes"><span class="type-annotation">List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span> <span class="parameter-name">rawTypes</span></span>)
+            <span class="returntype parameter">&#8594; List&lt;<a href="dartdoc/ElementType-class.html">ElementType</a>&gt;</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="annotationsFromMetadata" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/annotationsFromMetadata.html">annotationsFromMetadata</a></span><span class="signature">(<wbr><span class="parameter" id="annotationsFromMetadata-param-md"><span class="type-annotation">List</span> <span class="parameter-name">md</span></span>)
+            <span class="returntype parameter">&#8594; List&lt;String&gt;</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns annotations from a given metadata set, with escaping.
+md is a dynamic parameter since ElementAnnotation and Annotation have no
+common class for calling toSource() and element.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="canOverride" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/canOverride.html">canOverride</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="compareTo" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/compareTo.html">compareTo</a></span><span class="signature">(<wbr><span class="parameter" id="compareTo-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; int</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Compares this object to another <code>Comparable</code>
+          <div class="features">inherited</div>
+</dd>
+        <dt id="linkedParams" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/linkedParams.html">linkedParams</a></span><span class="signature">(<wbr>{<span class="parameter" id="linkedParams-param-showMetadata"><span class="type-annotation">bool</span> <span class="parameter-name">showMetadata</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="linkedParams-param-showNames"><span class="type-annotation">bool</span> <span class="parameter-name">showNames</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="linkedParams-param-separator"><span class="type-annotation">String</span> <span class="parameter-name">separator</span>: <span class="default-value">', '</span></span> })
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="toString" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Returns a string representation of this object.
+          <div class="features">inherited</div>
+</dd>
+        <dt id="warn" class="callable inherited">
+          <span class="name"><a href="dartdoc/ModelElement/warn.html">warn</a></span><span class="signature">(<wbr><span class="parameter" id="warn-param-kind"><span class="type-annotation"><a href="dartdoc/PackageWarning-class.html">PackageWarning</a></span> <span class="parameter-name">kind</span>, {</span> <span class="parameter" id="warn-param-message"><span class="type-annotation">String</span> <span class="parameter-name">message</span>, </span> <span class="parameter" id="warn-param-referredFrom"><span class="type-annotation"><a href="dartdoc/Locatable-class.html">Locatable</a></span> <span class="parameter-name">referredFrom</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable">
+          <span class="name"><a href="dartdoc/Class/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-o"><span class="parameter-name">o</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd>
+          The equality operator.
+          
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>class Class</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/Class-class.html#constructors">Constructors</a></li>
+      <li><a href="dartdoc/Class/Class.html">Class</a></li>
+    
+      <li class="section-title">
+        <a href="dartdoc/Class-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="dartdoc/Class/allCanonicalModelElements.html">allCanonicalModelElements</a></li>
+      <li><a href="dartdoc/Class/allInstanceMethods.html">allInstanceMethods</a></li>
+      <li><a href="dartdoc/Class/allInstanceMethodsInherited.html">allInstanceMethodsInherited</a></li>
+      <li><a href="dartdoc/Class/allInstanceProperties.html">allInstanceProperties</a></li>
+      <li><a href="dartdoc/Class/allInstancePropertiesInherited.html">allInstancePropertiesInherited</a></li>
+      <li><a href="dartdoc/Class/allModelElements.html">allModelElements</a></li>
+      <li><a href="dartdoc/Class/allOperators.html">allOperators</a></li>
+      <li><a href="dartdoc/Class/allOperatorsInherited.html">allOperatorsInherited</a></li>
+      <li><a href="dartdoc/Class/constants.html">constants</a></li>
+      <li><a href="dartdoc/Class/constructors.html">constructors</a></li>
+      <li><a href="dartdoc/Class/enclosingElement.html">enclosingElement</a></li>
+      <li><a href="dartdoc/Class/fileName.html">fileName</a></li>
+      <li><a href="dartdoc/Class/fullkind.html">fullkind</a></li>
+      <li><a href="dartdoc/Class/hasConstants.html">hasConstants</a></li>
+      <li><a href="dartdoc/Class/hasConstructors.html">hasConstructors</a></li>
+      <li><a href="dartdoc/Class/hasImplementors.html">hasImplementors</a></li>
+      <li><a href="dartdoc/Class/hasInheritedMethods.html">hasInheritedMethods</a></li>
+      <li><a href="dartdoc/Class/hasInstanceMethods.html">hasInstanceMethods</a></li>
+      <li><a href="dartdoc/Class/hasInstanceProperties.html">hasInstanceProperties</a></li>
+      <li><a href="dartdoc/Class/hasInterfaces.html">hasInterfaces</a></li>
+      <li><a href="dartdoc/Class/hasMethods.html">hasMethods</a></li>
+      <li><a href="dartdoc/Class/hasMixins.html">hasMixins</a></li>
+      <li><a href="dartdoc/Class/hasModifiers.html">hasModifiers</a></li>
+      <li><a href="dartdoc/Class/hasOperators.html">hasOperators</a></li>
+      <li><a href="dartdoc/Class/hasProperties.html">hasProperties</a></li>
+      <li><a href="dartdoc/Class/hasStaticMethods.html">hasStaticMethods</a></li>
+      <li><a href="dartdoc/Class/hasStaticProperties.html">hasStaticProperties</a></li>
+      <li><a href="dartdoc/Class/hasSupertype.html">hasSupertype</a></li>
+      <li><a href="dartdoc/Class/href.html">href</a></li>
+      <li><a href="dartdoc/Class/implementors.html">implementors</a></li>
+      <li><a href="dartdoc/Class/inheritanceChain.html">inheritanceChain</a></li>
+      <li><a href="dartdoc/Class/inheritedMethods.html">inheritedMethods</a></li>
+      <li><a href="dartdoc/Class/inheritedOperators.html">inheritedOperators</a></li>
+      <li><a href="dartdoc/Class/inheritedProperties.html">inheritedProperties</a></li>
+      <li><a href="dartdoc/Class/instanceMethods.html">instanceMethods</a></li>
+      <li><a href="dartdoc/Class/instanceProperties.html">instanceProperties</a></li>
+      <li><a href="dartdoc/Class/interfaces.html">interfaces</a></li>
+      <li><a href="dartdoc/Class/isAbstract.html">isAbstract</a></li>
+      <li><a href="dartdoc/Class/isCanonical.html">isCanonical</a></li>
+      <li><a href="dartdoc/Class/isErrorOrException.html">isErrorOrException</a></li>
+      <li><a href="dartdoc/Class/kind.html">kind</a></li>
+      <li><a href="dartdoc/Class/methodsForPages.html">methodsForPages</a></li>
+      <li><a href="dartdoc/Class/mixins.html">mixins</a></li>
+      <li><a href="dartdoc/Class/mixinsRaw.html">mixinsRaw</a></li>
+      <li><a href="dartdoc/Class/nameWithGenerics.html">nameWithGenerics</a></li>
+      <li><a href="dartdoc/Class/operators.html">operators</a></li>
+      <li><a href="dartdoc/Class/operatorsForPages.html">operatorsForPages</a></li>
+      <li><a href="dartdoc/Class/propertiesForPages.html">propertiesForPages</a></li>
+      <li><a href="dartdoc/Class/staticMethods.html">staticMethods</a></li>
+      <li><a href="dartdoc/Class/staticProperties.html">staticProperties</a></li>
+      <li><a href="dartdoc/Class/superChain.html">superChain</a></li>
+      <li><a href="dartdoc/Class/superChainRaw.html">superChainRaw</a></li>
+      <li><a href="dartdoc/Class/superChainRawReversed.html">superChainRawReversed</a></li>
+      <li><a href="dartdoc/Class/superChainReversed.html">superChainReversed</a></li>
+      <li><a href="dartdoc/Class/supertype.html">supertype</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/allParameters.html">allParameters</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/annotations.html">annotations</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/canHaveParameters.html">canHaveParameters</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/canonicalLibrary.html">canonicalLibrary</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/definingLibrary.html">definingLibrary</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/documentation.html">documentation</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/documentationAsHtml.html">documentationAsHtml</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/documentationFrom.html">documentationFrom</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/element.html">element</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/elementLocation.html">elementLocation</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/exportedInLibraries.html">exportedInLibraries</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/features.html">features</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/featuresAsString.html">featuresAsString</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/fullyQualifiedName.html">fullyQualifiedName</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/fullyQualifiedNameWithoutLibrary.html">fullyQualifiedNameWithoutLibrary</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/genericParameters.html">genericParameters</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/hasAnnotations.html">hasAnnotations</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/hasDocumentation.html">hasDocumentation</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/hasExtendedDocumentation.html">hasExtendedDocumentation</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/hasParameters.html">hasParameters</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/htmlId.html">htmlId</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isAsynchronous.html">isAsynchronous</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isConst.html">isConst</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isDeprecated.html">isDeprecated</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isExecutable.html">isExecutable</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isFinal.html">isFinal</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isLocalElement.html">isLocalElement</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isPropertyAccessor.html">isPropertyAccessor</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isPropertyInducer.html">isPropertyInducer</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/isStatic.html">isStatic</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/library.html">library</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/lineAndColumn.html">lineAndColumn</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/linkedName.html">linkedName</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/linkedParamsLines.html">linkedParamsLines</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/linkedParamsNoMetadata.html">linkedParamsNoMetadata</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/linkedParamsNoMetadataOrNames.html">linkedParamsNoMetadataOrNames</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/modelType.html">modelType</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/name.html">name</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/oneLineDoc.html">oneLineDoc</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/overriddenDepth.html">overriddenDepth</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/overriddenDocumentedElement.html">overriddenDocumentedElement</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/overriddenElement.html">overriddenElement</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/package.html">package</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/parameters.html">parameters</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/runtimeType.html">runtimeType</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/sourceFileName.html">sourceFileName</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/usedElements.html">usedElements</a></li>
+    
+      <li class="section-title"><a href="dartdoc/Class-class.html#instance-methods">Methods</a></li>
+      <li><a href="dartdoc/Class/contains.html">contains</a></li>
+      <li><a href="dartdoc/Class/filterNonPublicTypes.html">filterNonPublicTypes</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/annotationsFromMetadata.html">annotationsFromMetadata</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/canOverride.html">canOverride</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/compareTo.html">compareTo</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/linkedParams.html">linkedParams</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/toString.html">toString</a></li>
+      <li class="inherited"><a href="dartdoc/ModelElement/warn.html">warn</a></li>
+    
+      <li class="section-title"><a href="dartdoc/Class-class.html#operators">Operators</a></li>
+      <li><a href="dartdoc/Class/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

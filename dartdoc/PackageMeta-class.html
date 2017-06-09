@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the PackageMeta class from the dartdoc library, for the Dart programming language.">
+  <title>PackageMeta class - dartdoc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">dartdoc</a></li>
+    <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    <li class="self-crumb">abstract class PackageMeta</li>
+  </ol>
+  <div class="self-name">PackageMeta</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>library dartdoc</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#classes">Classes</a></li>
+      <li><a href="dartdoc/Accessor-class.html">Accessor</a></li>
+      <li><a href="dartdoc/Class-class.html">Class</a></li>
+      <li><a href="dartdoc/Config-class.html">Config</a></li>
+      <li><a href="dartdoc/Constructor-class.html">Constructor</a></li>
+      <li><a href="dartdoc/DartDoc-class.html">DartDoc</a></li>
+      <li><a href="dartdoc/DartDocFailure-class.html">DartDocFailure</a></li>
+      <li><a href="dartdoc/DartDocResults-class.html">DartDocResults</a></li>
+      <li><a href="dartdoc/Documentable-class.html">Documentable</a></li>
+      <li><a href="dartdoc/Dynamic-class.html">Dynamic</a></li>
+      <li><a href="dartdoc/ElementType-class.html">ElementType</a></li>
+      <li><a href="dartdoc/EnclosedElement-class.html">EnclosedElement</a></li>
+      <li><a href="dartdoc/Enum-class.html">Enum</a></li>
+      <li><a href="dartdoc/EnumField-class.html">EnumField</a></li>
+      <li><a href="dartdoc/Field-class.html">Field</a></li>
+      <li><a href="dartdoc/FileContents-class.html">FileContents</a></li>
+      <li><a href="dartdoc/Generator-class.html">Generator</a></li>
+      <li><a href="dartdoc/GetterSetterCombo-class.html">GetterSetterCombo</a></li>
+      <li><a href="dartdoc/Inheritable-class.html">Inheritable</a></li>
+      <li><a href="dartdoc/Library-class.html">Library</a></li>
+      <li><a href="dartdoc/Locatable-class.html">Locatable</a></li>
+      <li><a href="dartdoc/Method-class.html">Method</a></li>
+      <li><a href="dartdoc/ModelElement-class.html">ModelElement</a></li>
+      <li><a href="dartdoc/ModelFunction-class.html">ModelFunction</a></li>
+      <li><a href="dartdoc/Nameable-class.html">Nameable</a></li>
+      <li><a href="dartdoc/Operator-class.html">Operator</a></li>
+      <li><a href="dartdoc/Package-class.html">Package</a></li>
+      <li><a href="dartdoc/PackageCategory-class.html">PackageCategory</a></li>
+      <li><a href="dartdoc/PackageMeta-class.html">PackageMeta</a></li>
+      <li><a href="dartdoc/PackageWarningCounter-class.html">PackageWarningCounter</a></li>
+      <li><a href="dartdoc/PackageWarningOptions-class.html">PackageWarningOptions</a></li>
+      <li><a href="dartdoc/Parameter-class.html">Parameter</a></li>
+      <li><a href="dartdoc/SourceCodeMixin-class.html">SourceCodeMixin</a></li>
+      <li><a href="dartdoc/TopLevelVariable-class.html">TopLevelVariable</a></li>
+      <li><a href="dartdoc/Typedef-class.html">Typedef</a></li>
+      <li><a href="dartdoc/TypeParameter-class.html">TypeParameter</a></li>
+      <li><a href="dartdoc/Warnable-class.html">Warnable</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#constants">Constants</a></li>
+      <li><a href="dartdoc/featureOrder-constant.html">featureOrder</a></li>
+      <li><a href="dartdoc/name-constant.html">name</a></li>
+      <li><a href="dartdoc/version-constant.html">version</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#properties">Properties</a></li>
+      <li><a href="dartdoc/config.html">config</a></li>
+      <li><a href="dartdoc/defaultOutDir.html">defaultOutDir</a></li>
+      <li><a href="dartdoc/packageWarningText.html">packageWarningText</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#functions">Functions</a></li>
+      <li><a href="dartdoc/byFeatureOrdering.html">byFeatureOrdering</a></li>
+      <li><a href="dartdoc/byName.html">byName</a></li>
+      <li><a href="dartdoc/getSdkDir.html">getSdkDir</a></li>
+      <li><a href="dartdoc/initGenerators.html">initGenerators</a></li>
+      <li><a href="dartdoc/setConfig.html">setConfig</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#enums">Enums</a></li>
+      <li><a href="dartdoc/PackageWarning-class.html">PackageWarning</a></li>
+    
+    
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    
+
+    <section class="summary offset-anchor" id="constructors">
+      <h2>Constructors</h2>
+
+      <dl class="constructor-summary-list">
+        <dt id="PackageMeta" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/PackageMeta.html">PackageMeta</a></span><span class="signature">(<span class="parameter" id="-param-dir"><span class="type-annotation">Directory</span> <span class="parameter-name">dir</span>, {</span> <span class="parameter" id="-param-useCategories"><span class="type-annotation">bool</span> <span class="parameter-name">useCategories</span>: <span class="default-value">false</span></span> })</span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="PackageMeta.fromDir" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/PackageMeta.fromDir.html">PackageMeta.fromDir</a></span><span class="signature">(<span class="parameter" id="fromDir-param-dir"><span class="type-annotation">Directory</span> <span class="parameter-name">dir</span></span>)</span>
+        </dt>
+        <dd>
+          
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+        <dt id="PackageMeta.fromSdk" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/PackageMeta.fromSdk.html">PackageMeta.fromSdk</a></span><span class="signature">(<span class="parameter" id="fromSdk-param-sdkDir"><span class="type-annotation">Directory</span> <span class="parameter-name">sdkDir</span>, {</span> <span class="parameter" id="fromSdk-param-sdkReadmePath"><span class="type-annotation">String</span> <span class="parameter-name">sdkReadmePath</span>, </span> <span class="parameter" id="fromSdk-param-useCategories"><span class="type-annotation">bool</span> <span class="parameter-name">useCategories</span></span> })</span>
+        </dt>
+        <dd>
+          
+          <div class="constructor-modifier features">factory</div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="description" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/description.html">description</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="dir" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/dir.html">dir</a></span>
+          <span class="signature">&#8594; Directory</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="homepage" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/homepage.html">homepage</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="isSdk" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/isSdk.html">isSdk</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="isValid" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/isValid.html">isValid</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          Returns true if we are a valid package, valid enough to generate docs.
+          <div class="features">read-only</div>
+</dd>
+        <dt id="name" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/name.html">name</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="needsPubGet" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/needsPubGet.html">needsPubGet</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="resolvedDir" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/resolvedDir.html">resolvedDir</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="useCategories" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/useCategories.html">useCategories</a></span>
+          <span class="signature">&#8594; bool</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="version" class="property">
+          <span class="name"><a href="dartdoc/PackageMeta/version.html">version</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="hashCode" class="property inherited">
+          <span class="name"><a href="dartdoc/PackageMeta/hashCode.html">hashCode</a></span>
+          <span class="signature">&#8594; int</span>
+        </dt>
+        <dd class="inherited">
+          The hash code for this object.
+          <div class="features">read-only, inherited</div>
+</dd>
+        <dt id="runtimeType" class="property inherited">
+          <span class="name"><a href="dartdoc/PackageMeta/runtimeType.html">runtimeType</a></span>
+          <span class="signature">&#8594; Type</span>
+        </dt>
+        <dd class="inherited">
+          A representation of the runtime type of the object.
+          <div class="features">read-only, inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="instance-methods">
+      <h2>Methods</h2>
+      <dl class="callables">
+        <dt id="getChangelogContents" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/getChangelogContents.html">getChangelogContents</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dartdoc/FileContents-class.html">FileContents</a></span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="getInvalidReasons" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/getInvalidReasons.html">getInvalidReasons</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; List&lt;String&gt;</span>
+          </span>
+        </dt>
+        <dd>
+          Returns a list of reasons this package is invalid, or an
+empty list if no reasons found.
+          
+</dd>
+        <dt id="getLicenseContents" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/getLicenseContents.html">getLicenseContents</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dartdoc/FileContents-class.html">FileContents</a></span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="getReadmeContents" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/getReadmeContents.html">getReadmeContents</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; <a href="dartdoc/FileContents-class.html">FileContents</a></span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="runPubGet" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/runPubGet.html">runPubGet</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="toString" class="callable">
+          <span class="name"><a href="dartdoc/PackageMeta/toString.html">toString</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; String</span>
+          </span>
+        </dt>
+        <dd>
+          Returns a string representation of this object.
+          
+</dd>
+        <dt id="noSuchMethod" class="callable inherited">
+          <span class="name"><a href="dartdoc/PackageMeta/noSuchMethod.html">noSuchMethod</a></span><span class="signature">(<wbr><span class="parameter" id="noSuchMethod-param-invocation"><span class="type-annotation">Invocation</span> <span class="parameter-name">invocation</span></span>)
+            <span class="returntype parameter">&#8594; dynamic</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          Invoked when a non-existent method or property is accessed.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor inherited" id="operators">
+      <h2>Operators</h2>
+      <dl class="callables">
+        <dt id="operator ==" class="callable inherited">
+          <span class="name"><a href="dartdoc/PackageMeta/operator_equals.html">operator ==</a></span><span class="signature">(<wbr><span class="parameter" id="==-param-other"><span class="parameter-name">other</span></span>)
+            <span class="returntype parameter">&#8594; bool</span>
+          </span>
+        </dt>
+        <dd class="inherited">
+          The equality operator.
+          <div class="features">inherited</div>
+</dd>
+      </dl>
+    </section>
+
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>class PackageMeta</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/PackageMeta-class.html#constructors">Constructors</a></li>
+      <li><a href="dartdoc/PackageMeta/PackageMeta.html">PackageMeta</a></li>
+      <li><a href="dartdoc/PackageMeta/PackageMeta.fromDir.html">fromDir</a></li>
+      <li><a href="dartdoc/PackageMeta/PackageMeta.fromSdk.html">fromSdk</a></li>
+    
+      <li class="section-title">
+        <a href="dartdoc/PackageMeta-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="dartdoc/PackageMeta/description.html">description</a></li>
+      <li><a href="dartdoc/PackageMeta/dir.html">dir</a></li>
+      <li><a href="dartdoc/PackageMeta/homepage.html">homepage</a></li>
+      <li><a href="dartdoc/PackageMeta/isSdk.html">isSdk</a></li>
+      <li><a href="dartdoc/PackageMeta/isValid.html">isValid</a></li>
+      <li><a href="dartdoc/PackageMeta/name.html">name</a></li>
+      <li><a href="dartdoc/PackageMeta/needsPubGet.html">needsPubGet</a></li>
+      <li><a href="dartdoc/PackageMeta/resolvedDir.html">resolvedDir</a></li>
+      <li><a href="dartdoc/PackageMeta/useCategories.html">useCategories</a></li>
+      <li><a href="dartdoc/PackageMeta/version.html">version</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="dartdoc/PackageMeta-class.html#instance-methods">Methods</a></li>
+      <li><a href="dartdoc/PackageMeta/getChangelogContents.html">getChangelogContents</a></li>
+      <li><a href="dartdoc/PackageMeta/getInvalidReasons.html">getInvalidReasons</a></li>
+      <li><a href="dartdoc/PackageMeta/getLicenseContents.html">getLicenseContents</a></li>
+      <li><a href="dartdoc/PackageMeta/getReadmeContents.html">getReadmeContents</a></li>
+      <li><a href="dartdoc/PackageMeta/runPubGet.html">runPubGet</a></li>
+      <li><a href="dartdoc/PackageMeta/toString.html">toString</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/noSuchMethod.html">noSuchMethod</a></li>
+    
+      <li class="section-title inherited"><a href="dartdoc/PackageMeta-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dartdoc/PackageMeta/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

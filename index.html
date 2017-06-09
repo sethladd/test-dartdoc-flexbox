@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="made with love by dartdoc 0.12.0">
+  <meta name="description" content="dartdoc API docs, for the Dart programming language.">
+  <title>dartdoc - Dart API docs</title>
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li class="self-crumb">package dartdoc</li>
+  </ol>
+  <div class="self-name">dartdoc</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>package dartdoc</h5>
+
+
+    <ol>
+      <li class="section-title"><a href="index.html#libraries">Libraries</a></li>
+      <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+      <section class="desc markdown">
+        <h1>dartdoc</h1>
+<p><a href="https://travis-ci.org/dart-lang/dartdoc"><img alt="Build Status" src="https://travis-ci.org/dart-lang/dartdoc.svg?branch=master"></a></p>
+<p>Use <code>dartdoc</code> to generate HTML documentaton for your Dart package.</p>
+<p>For information about contributing to the dartdoc project, see the
+<a href="https://github.com/dart-lang/dartdoc/blob/master/CONTRIBUTING.md">contributor docs</a>.</p>
+<p>For issues/details related to hosted Dart API docs, see
+<a href="https://github.com/dart-lang/api.dartlang.org/">dart-lang/api.dartlang.org</a>.</p>
+<h2>Installing dartdoc</h2><ul><li>download the <a href="https://www.dartlang.org/downloads/">Dart SDK</a></li><li>add the SDK's <code>bin</code> directory to your <code>PATH</code></li></ul>
+<h2>Generating docs</h2>
+<p>Run <code>dartdoc</code> from the root directory of package. For example:</p>
+<pre class="prettyprint language-dart"><code>$ dartdoc
+Generating documentation for 'server_code_lab' into &lt;path-to-server-code-lab&gt;/server_code_lab/doc/api/
+
+parsing lib/client/piratesapi.dart...
+parsing lib/common/messages.dart...
+parsing lib/common/utils.dart...
+parsing lib/server/piratesapi.dart...
+Parsed 4 files in 8.1 seconds.
+
+generating docs for library pirate.messages from messages.dart...
+generating docs for library pirate.server from piratesapi.dart...
+generating docs for library pirate.utils from utils.dart...
+generating docs for library server_code_lab.piratesApi.client from piratesapi.dart...
+Documented 4 libraries in 9.6 seconds.
+
+Success! Docs generated into &lt;path-to-server-code-lab&gt;/server_code_lab/doc/api/index.html
+</code></pre>
+<p>By default, the documentation is generated to the <code>doc/api</code> directory as static
+HTML files.</p>
+<p>Run <code>dartdoc -h</code> to see the available command-line options.</p>
+<h2>Viewing docs</h2>
+<p>You can view the generated docs directly from the file system, but if you want
+to use the search function, you must load them with an HTTP server.</p>
+<p>An easy way to run an HTTP server locally is to use the <code>dhttpd</code> package. For
+example:</p>
+<pre class="prettyprint language-dart"><code>$ pub global activate dhttpd
+$ dhttpd --path doc/api
+</code></pre>
+<p>Navigate to <code>http://localhost:8080</code> in your browser; the search function should
+now work.</p>
+<h2>Link structure</h2>
+<p>dartdoc produces static files with a predictable link structure.</p>
+<pre class="prettyprint language-dart"><code>index.html                          # homepage
+index.json                          # machine-readable index
+library-name/                       # : is turned into a - e.g. dart:core =&gt; dart-core
+  ClassName-class.html              # "homepage" for a class (and enum)
+  ClassName/
+    ClassName.html                  # constructor
+    ClassName.namedConstructor.html # named constructor
+    method.html
+    property.html
+  CONSTANT.html
+  property.html
+  top-level-function.html
+</code></pre>
+<p>File names are <em>case-sensitive</em>.</p>
+<h2>Writing docs</h2>
+<p>Check out the
+<a href="https://www.dartlang.org/effective-dart/documentation/">Effective Dart: Documentation guide</a>.</p>
+<p>The guide covers formatting, linking, markup, and general best practices when
+authoring doc comments for Dart with <code>dartdoc</code>.</p>
+<h2>Excluding from documentation</h2>
+<p><code>dartdoc</code> will not generate documentation for a Dart element and its children that have the
+<code>@nodoc</code> tag in the documentation comment.</p>
+<h2>Advanced features</h2>
+<h3>Macros</h3>
+<p>You can specify "macros", i.e. reusable pieces of documentation. For that, first specify a template
+anywhere in the comments, like:</p>
+<pre class="prettyprint language-dart"><code>/// {@template template_name}
+/// Some shared docs
+/// {@endtemplate}
+</code></pre>
+<p>and then you can insert it via <code>{@macro template_name}</code>, like</p>
+<pre class="prettyprint language-dart"><code>/// Some comment
+/// {@macro template_name}
+/// More comments
+</code></pre>
+<h3>Auto including dependencies</h3>
+<p>If <code>--auto-include-dependencies</code> flag is provided, dartdoc tries to automatically add
+all the used libraries, even from other packages, to the list of the documented libraries.</p>
+<h2>Issues and bugs</h2>
+<p>Please file reports on the <a href="https://github.com/dart-lang/dartdoc/issues">GitHub Issue Tracker</a>.  Issues are labeled with
+priority based on how much impact to the ecosystem the issue addresses and
+the number of generated pages that show the anomaly (widespread vs. not
+widespread).</p>
+<p>Some examples of likely triage priorities:</p><ul><li>
+<p>P0</p><ul><li>Broken links, widespread</li><li>Uncaught exceptions, widespread</li><li>Incorrect linkage, widespread</li><li>Very ugly or navigation impaired generated pages, widespread</li></ul></li><li>
+<p>P1</p><ul><li>Broken links, few or on edge cases</li><li>Uncaught exceptions, very rare or with simple workarounds</li><li>Incorrect linkage, few or on edge cases</li><li>Incorrect doc contents, widespread or with high impact</li><li>Minor display warts not significantly impeding navigation, widespread</li><li>Default-on warnings that are misleading or wrong, widespread</li><li>Generation problems that should be detected but aren't warned, widespread</li><li>Enhancements that have significant data around them indicating they are a big win</li><li>User performance problem (e.g. page load, search), widespread</li></ul></li><li>
+<p>P2</p><ul><li>Incorrect doc contents, not widespread</li><li>Minor display warts not significantly impeding navigation, not widespread</li><li>Generation problems that should be detected but aren't warned, not widespread</li><li>Default-on warnings that are misleading or wrong, few or on edge cases  </li><li>Non-default warnings that are misleading or wrong, widespread</li><li>Enhancements considered important but without significant data indicating they are a big win</li><li>User performance problem (e.g. page load, search), not widespread</li><li>Generation performance problem, widespread</li></ul></li><li>
+<p>P3</p><ul><li>Theoretical or extremely rare problems with generation</li><li>Minor display warts on edge cases only</li><li>Non-default warnings that are misleading or wrong, few or on edge cases</li><li>Enhancements whose importance is uncertain</li><li>Generation performance problem, limited impact or not widespread</li></ul></li></ul>
+<h2>License</h2>
+<p>Please see the <a href="https://github.com/dart-lang/dartdoc/blob/master/LICENSE">dartdoc license</a>.</p>
+      </section>
+      
+
+      <section class="summary" id="libraries">
+        <h2>Libraries</h2>
+        <dl>
+            <dt id="dartdoc">
+              <span class="name"><a href="dartdoc/dartdoc-library.html">dartdoc</a></span>
+            </dt>
+            <dd>
+              A documentation generator for Dart.
+            </dd>
+        </dl>
+      </section>
+
+  </div> <!-- /.main-content -->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

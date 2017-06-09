@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="dartdoc library API docs, for the Dart programming language.">
+  <title>dartdoc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">dartdoc</a></li>
+    <li class="self-crumb">library dartdoc</li>
+  </ol>
+  <div class="self-name">dartdoc</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>package dartdoc</h5>
+
+    <ol>
+      <li class="section-title"><a href="index.html#libraries">Libraries</a></li>
+      <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    </ol>
+  </div>
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+
+    <section class="desc markdown">
+      <p>A documentation generator for Dart.</p>
+    </section>
+    
+    <section class="summary offset-anchor" id="classes">
+      <h2>Classes</h2>
+
+      <dl>
+        <dt id="Accessor">
+          <span class="name "><a href="dartdoc/Accessor-class.html">Accessor</a></span>
+        </dt>
+        <dd>
+          Getters and setters.
+        </dd>
+        <dt id="Class">
+          <span class="name "><a href="dartdoc/Class-class.html">Class</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Config">
+          <span class="name "><a href="dartdoc/Config-class.html">Config</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Constructor">
+          <span class="name "><a href="dartdoc/Constructor-class.html">Constructor</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="DartDoc">
+          <span class="name "><a href="dartdoc/DartDoc-class.html">DartDoc</a></span>
+        </dt>
+        <dd>
+          Generates Dart documentation for all public Dart libraries in the given
+directory.
+        </dd>
+        <dt id="DartDocFailure">
+          <span class="name "><a href="dartdoc/DartDocFailure-class.html">DartDocFailure</a></span>
+        </dt>
+        <dd>
+          This class is returned if dartdoc fails in an expected way (for instance, if
+there is an analysis error in the library).
+        </dd>
+        <dt id="DartDocResults">
+          <span class="name "><a href="dartdoc/DartDocResults-class.html">DartDocResults</a></span>
+        </dt>
+        <dd>
+          The results of a <a href="dartdoc/DartDoc/generateDocs.html">DartDoc.generateDocs</a> call.
+        </dd>
+        <dt id="Documentable">
+          <span class="name "><a href="dartdoc/Documentable-class.html">Documentable</a></span>
+        </dt>
+        <dd>
+          Bridges the gap between model elements and packages,
+both of which have documentation.
+        </dd>
+        <dt id="Dynamic">
+          <span class="name "><a href="dartdoc/Dynamic-class.html">Dynamic</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="ElementType">
+          <span class="name "><a href="dartdoc/ElementType-class.html">ElementType</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="EnclosedElement">
+          <span class="name "><a href="dartdoc/EnclosedElement-class.html">EnclosedElement</a></span>
+        </dt>
+        <dd>
+          An element that is enclosed by some other element.
+        </dd>
+        <dt id="Enum">
+          <span class="name "><a href="dartdoc/Enum-class.html">Enum</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="EnumField">
+          <span class="name "><a href="dartdoc/EnumField-class.html">EnumField</a></span>
+        </dt>
+        <dd>
+          Enum's fields are virtual, so we do a little work to create
+usable values for the docs.
+        </dd>
+        <dt id="Field">
+          <span class="name "><a href="dartdoc/Field-class.html">Field</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="FileContents">
+          <span class="name "><a href="dartdoc/FileContents-class.html">FileContents</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Generator">
+          <span class="name "><a href="dartdoc/Generator-class.html">Generator</a></span>
+        </dt>
+        <dd>
+          An abstract class that defines a generator that generates documentation for
+a given package.
+        </dd>
+        <dt id="GetterSetterCombo">
+          <span class="name "><a href="dartdoc/GetterSetterCombo-class.html">GetterSetterCombo</a></span>
+        </dt>
+        <dd>
+          Mixin for top-level variables and fields (aka properties)
+        </dd>
+        <dt id="Inheritable">
+          <span class="name "><a href="dartdoc/Inheritable-class.html">Inheritable</a></span>
+        </dt>
+        <dd>
+          Mixin for subclasses of ModelElement representing Elements that can be
+inherited from one class to another.
+        </dd>
+        <dt id="Library">
+          <span class="name "><a href="dartdoc/Library-class.html">Library</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Locatable">
+          <span class="name "><a href="dartdoc/Locatable-class.html">Locatable</a></span>
+        </dt>
+        <dd>
+          Something that can be located for warning purposes.
+        </dd>
+        <dt id="Method">
+          <span class="name "><a href="dartdoc/Method-class.html">Method</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="ModelElement">
+          <span class="name "><a href="dartdoc/ModelElement-class.html">ModelElement</a></span>
+        </dt>
+        <dd>
+          This class is the foundation of Dartdoc's model for source code.
+All ModelElements are contained within a <a href="dartdoc/Package-class.html">Package</a>, and laid out in a
+structure that mirrors the availability of identifiers in the various
+namespaces within that package.  For example, multiple <a href="dartdoc/Class-class.html">Class</a> objects
+for a particular identifier (<a href="dartdoc/ModelElement/element.html">ModelElement.element</a>) may show up in
+different <a href="dartdoc/Library-class.html">Library</a>s as the identifier is reexported.
+        </dd>
+        <dt id="ModelFunction">
+          <span class="name "><a href="dartdoc/ModelFunction-class.html">ModelFunction</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Nameable">
+          <span class="name "><a href="dartdoc/Nameable-class.html">Nameable</a></span>
+        </dt>
+        <dd>
+          Something that has a name.
+        </dd>
+        <dt id="Operator">
+          <span class="name "><a href="dartdoc/Operator-class.html">Operator</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Package">
+          <span class="name "><a href="dartdoc/Package-class.html">Package</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="PackageCategory">
+          <span class="name "><a href="dartdoc/PackageCategory-class.html">PackageCategory</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="PackageMeta">
+          <span class="name "><a href="dartdoc/PackageMeta-class.html">PackageMeta</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="PackageWarningCounter">
+          <span class="name "><a href="dartdoc/PackageWarningCounter-class.html">PackageWarningCounter</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="PackageWarningOptions">
+          <span class="name "><a href="dartdoc/PackageWarningOptions-class.html">PackageWarningOptions</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Parameter">
+          <span class="name "><a href="dartdoc/Parameter-class.html">Parameter</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="SourceCodeMixin">
+          <span class="name "><a href="dartdoc/SourceCodeMixin-class.html">SourceCodeMixin</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="TopLevelVariable">
+          <span class="name "><a href="dartdoc/TopLevelVariable-class.html">TopLevelVariable</a></span>
+        </dt>
+        <dd>
+          Top-level variables. But also picks up getters and setters?
+        </dd>
+        <dt id="Typedef">
+          <span class="name "><a href="dartdoc/Typedef-class.html">Typedef</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="TypeParameter">
+          <span class="name "><a href="dartdoc/TypeParameter-class.html">TypeParameter</a></span>
+        </dt>
+        <dd>
+          
+        </dd>
+        <dt id="Warnable">
+          <span class="name "><a href="dartdoc/Warnable-class.html">Warnable</a></span>
+        </dt>
+        <dd>
+          Something that package warnings can be called on.
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="constants">
+      <h2>Constants</h2>
+
+      <dl class="properties">
+        <dt id="featureOrder" class="constant">
+          <span class="name "><a href="dartdoc/featureOrder-constant.html">featureOrder</a></span>
+          <span class="signature">&#8594; Map&lt;String, int&gt;</span>
+        </dt>
+        <dd>
+          Items mapped less than zero will sort before custom annotations.
+Items mapped above zero are sorted after custom annotations.
+Items mapped to zero will sort alphabetically among custom annotations.
+Custom annotations are assumed to be any annotation or feature not in this
+map.
+          
+  <div>
+            <span class="signature"><code>const {&#39;read-only&#39; : 1, &#39;write-only&#39; : 1, &#39;read &#47; write&#39; : 1, &#39;final&#39; : 2, &#39;inherited&#39; : 3}</code></span>
+          </div>
+        </dd>
+        <dt id="name" class="constant">
+          <span class="name "><a href="dartdoc/name-constant.html">name</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          
+  <div>
+            <span class="signature"><code>&#39;dartdoc&#39;</code></span>
+          </div>
+        </dd>
+        <dt id="version" class="constant">
+          <span class="name "><a href="dartdoc/version-constant.html">version</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          
+  <div>
+            <span class="signature"><code>&#39;0.12.0&#39;</code></span>
+          </div>
+        </dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="properties">
+      <h2>Properties</h2>
+
+      <dl class="properties">
+        <dt id="config" class="property">
+          <span class="name"><a href="dartdoc/config.html">config</a></span>
+          <span class="signature">&#8594; <a href="dartdoc/Config-class.html">Config</a></span>
+        </dt>
+        <dd>
+          
+          <div class="features">read-only</div>
+</dd>
+        <dt id="defaultOutDir" class="property">
+          <span class="name"><a href="dartdoc/defaultOutDir.html">defaultOutDir</a></span>
+          <span class="signature">&#8594; String</span>
+        </dt>
+        <dd>
+          
+          <div class="features">final</div>
+</dd>
+        <dt id="packageWarningText" class="property">
+          <span class="name"><a href="dartdoc/packageWarningText.html">packageWarningText</a></span><span class="signature">
+            <span class="returntype parameter">&#8596;   <span class="parameter" id="packageWarningText=-param-_packageWarningText"><span class="type-annotation">Map&lt;<a href="dartdoc/PackageWarning-class.html">PackageWarning</a>, List&lt;String&gt;&gt;</span></span> </span>
+          </span>
+        </dt>
+        <dd>
+          Provides description text and command line flags for warnings.
+TODO(jcollins-g): Actually use this for command line flags.
+          <div class="features">read / write</div>
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="functions">
+      <h2>Functions</h2>
+
+      <dl class="callables">
+        <dt id="byFeatureOrdering" class="callable">
+          <span class="name"><a href="dartdoc/byFeatureOrdering.html">byFeatureOrdering</a></span><span class="signature">(<wbr><span class="parameter" id="byFeatureOrdering-param-a"><span class="type-annotation">String</span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="byFeatureOrdering-param-b"><span class="type-annotation">String</span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; int</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="byName" class="callable">
+          <span class="name"><a href="dartdoc/byName.html">byName</a></span><span class="signature">(<wbr><span class="parameter" id="byName-param-a"><span class="type-annotation"><a href="dartdoc/Nameable-class.html">Nameable</a></span> <span class="parameter-name">a</span>, </span> <span class="parameter" id="byName-param-b"><span class="type-annotation"><a href="dartdoc/Nameable-class.html">Nameable</a></span> <span class="parameter-name">b</span></span>)
+            <span class="returntype parameter">&#8594; int</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="getSdkDir" class="callable">
+          <span class="name"><a href="dartdoc/getSdkDir.html">getSdkDir</a></span><span class="signature">(<wbr>)
+            <span class="returntype parameter">&#8594; Directory</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+        <dt id="initGenerators" class="callable">
+          <span class="name"><a href="dartdoc/initGenerators.html">initGenerators</a></span><span class="signature">(<wbr><span class="parameter" id="initGenerators-param-url"><span class="type-annotation">String</span> <span class="parameter-name">url</span>, </span> <span class="parameter" id="initGenerators-param-relCanonicalPrefix"><span class="type-annotation">String</span> <span class="parameter-name">relCanonicalPrefix</span>, {</span> <span class="parameter" id="initGenerators-param-headerFilePaths"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">headerFilePaths</span>, </span> <span class="parameter" id="initGenerators-param-footerFilePaths"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">footerFilePaths</span>, </span> <span class="parameter" id="initGenerators-param-footerTextFilePaths"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">footerTextFilePaths</span>, </span> <span class="parameter" id="initGenerators-param-faviconPath"><span class="type-annotation">String</span> <span class="parameter-name">faviconPath</span>, </span> <span class="parameter" id="initGenerators-param-useCategories"><span class="type-annotation">bool</span> <span class="parameter-name">useCategories</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="initGenerators-param-prettyIndexJson"><span class="type-annotation">bool</span> <span class="parameter-name">prettyIndexJson</span>: <span class="default-value">false</span></span> })
+            <span class="returntype parameter">&#8594; Future&lt;List&lt;<a href="dartdoc/Generator-class.html">Generator</a>&gt;&gt;</span>
+          </span>
+        </dt>
+        <dd>
+          Initialize and setup the generators.
+          
+</dd>
+        <dt id="setConfig" class="callable">
+          <span class="name"><a href="dartdoc/setConfig.html">setConfig</a></span><span class="signature">(<wbr>{<span class="parameter" id="setConfig-param-inputDir"><span class="type-annotation">Directory</span> <span class="parameter-name">inputDir</span>, </span> <span class="parameter" id="setConfig-param-showWarnings"><span class="type-annotation">bool</span> <span class="parameter-name">showWarnings</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="setConfig-param-addCrossdart"><span class="type-annotation">bool</span> <span class="parameter-name">addCrossdart</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="setConfig-param-examplePathPrefix"><span class="type-annotation">String</span> <span class="parameter-name">examplePathPrefix</span>, </span> <span class="parameter" id="setConfig-param-includeSource"><span class="type-annotation">bool</span> <span class="parameter-name">includeSource</span>: <span class="default-value">true</span>, </span> <span class="parameter" id="setConfig-param-sdkVersion"><span class="type-annotation">String</span> <span class="parameter-name">sdkVersion</span>, </span> <span class="parameter" id="setConfig-param-autoIncludeDependencies"><span class="type-annotation">bool</span> <span class="parameter-name">autoIncludeDependencies</span>: <span class="default-value">false</span>, </span> <span class="parameter" id="setConfig-param-categoryOrder"><span class="type-annotation">List&lt;String&gt;</span> <span class="parameter-name">categoryOrder</span></span> })
+            <span class="returntype parameter">&#8594; void</span>
+          </span>
+        </dt>
+        <dd>
+          
+          
+</dd>
+      </dl>
+    </section>
+
+    <section class="summary offset-anchor" id="enums">
+      <h2>Enums</h2>
+
+      <dl>
+        <dt id="PackageWarning">
+          <a href="dartdoc/PackageWarning-class.html">PackageWarning</a>
+        </dt>
+        <dd>
+          
+        </dd>
+      </dl>
+    </section>
+
+
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>library dartdoc</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#classes">Classes</a></li>
+      <li><a href="dartdoc/Accessor-class.html">Accessor</a></li>
+      <li><a href="dartdoc/Class-class.html">Class</a></li>
+      <li><a href="dartdoc/Config-class.html">Config</a></li>
+      <li><a href="dartdoc/Constructor-class.html">Constructor</a></li>
+      <li><a href="dartdoc/DartDoc-class.html">DartDoc</a></li>
+      <li><a href="dartdoc/DartDocFailure-class.html">DartDocFailure</a></li>
+      <li><a href="dartdoc/DartDocResults-class.html">DartDocResults</a></li>
+      <li><a href="dartdoc/Documentable-class.html">Documentable</a></li>
+      <li><a href="dartdoc/Dynamic-class.html">Dynamic</a></li>
+      <li><a href="dartdoc/ElementType-class.html">ElementType</a></li>
+      <li><a href="dartdoc/EnclosedElement-class.html">EnclosedElement</a></li>
+      <li><a href="dartdoc/Enum-class.html">Enum</a></li>
+      <li><a href="dartdoc/EnumField-class.html">EnumField</a></li>
+      <li><a href="dartdoc/Field-class.html">Field</a></li>
+      <li><a href="dartdoc/FileContents-class.html">FileContents</a></li>
+      <li><a href="dartdoc/Generator-class.html">Generator</a></li>
+      <li><a href="dartdoc/GetterSetterCombo-class.html">GetterSetterCombo</a></li>
+      <li><a href="dartdoc/Inheritable-class.html">Inheritable</a></li>
+      <li><a href="dartdoc/Library-class.html">Library</a></li>
+      <li><a href="dartdoc/Locatable-class.html">Locatable</a></li>
+      <li><a href="dartdoc/Method-class.html">Method</a></li>
+      <li><a href="dartdoc/ModelElement-class.html">ModelElement</a></li>
+      <li><a href="dartdoc/ModelFunction-class.html">ModelFunction</a></li>
+      <li><a href="dartdoc/Nameable-class.html">Nameable</a></li>
+      <li><a href="dartdoc/Operator-class.html">Operator</a></li>
+      <li><a href="dartdoc/Package-class.html">Package</a></li>
+      <li><a href="dartdoc/PackageCategory-class.html">PackageCategory</a></li>
+      <li><a href="dartdoc/PackageMeta-class.html">PackageMeta</a></li>
+      <li><a href="dartdoc/PackageWarningCounter-class.html">PackageWarningCounter</a></li>
+      <li><a href="dartdoc/PackageWarningOptions-class.html">PackageWarningOptions</a></li>
+      <li><a href="dartdoc/Parameter-class.html">Parameter</a></li>
+      <li><a href="dartdoc/SourceCodeMixin-class.html">SourceCodeMixin</a></li>
+      <li><a href="dartdoc/TopLevelVariable-class.html">TopLevelVariable</a></li>
+      <li><a href="dartdoc/Typedef-class.html">Typedef</a></li>
+      <li><a href="dartdoc/TypeParameter-class.html">TypeParameter</a></li>
+      <li><a href="dartdoc/Warnable-class.html">Warnable</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#constants">Constants</a></li>
+      <li><a href="dartdoc/featureOrder-constant.html">featureOrder</a></li>
+      <li><a href="dartdoc/name-constant.html">name</a></li>
+      <li><a href="dartdoc/version-constant.html">version</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#properties">Properties</a></li>
+      <li><a href="dartdoc/config.html">config</a></li>
+      <li><a href="dartdoc/defaultOutDir.html">defaultOutDir</a></li>
+      <li><a href="dartdoc/packageWarningText.html">packageWarningText</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#functions">Functions</a></li>
+      <li><a href="dartdoc/byFeatureOrdering.html">byFeatureOrdering</a></li>
+      <li><a href="dartdoc/byName.html">byName</a></li>
+      <li><a href="dartdoc/getSdkDir.html">getSdkDir</a></li>
+      <li><a href="dartdoc/initGenerators.html">initGenerators</a></li>
+      <li><a href="dartdoc/setConfig.html">setConfig</a></li>
+    
+      <li class="section-title"><a href="dartdoc/dartdoc-library.html#enums">Enums</a></li>
+      <li><a href="dartdoc/PackageWarning-class.html">PackageWarning</a></li>
+    
+    
+    </ol>
+  </div><!--/sidebar-offcanvas-right-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="API docs for the generateDocs method from the DartDoc class, for the Dart programming language.">
+  <title>generateDocs method - DartDoc class - dartdoc library - Dart API</title>
+  <!-- required because all the links are pseudo-absolute -->
+  <base href="../..">
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:500,400i,400,300|Source+Sans+Pro:400,300,700" rel="stylesheet">
+  <link rel="stylesheet" href="static-assets/prettify.css">
+  <link rel="stylesheet" href="static-assets/styles.css">
+  <link rel="icon" href="static-assets/favicon.png">
+
+</head>
+
+<body>
+
+<div id="overlay-under-drawer"></div>
+
+<header id="title">
+  <button id="sidenav-left-toggle" type="button">&nbsp;</button>
+  <ol class="breadcrumbs gt-separated dark hidden-xs">
+    <li><a href="index.html">dartdoc</a></li>
+    <li><a href="dartdoc/dartdoc-library.html">dartdoc</a></li>
+    <li><a href="dartdoc/DartDoc-class.html">DartDoc</a></li>
+    <li class="self-crumb">method generateDocs</li>
+  </ol>
+  <div class="self-name">generateDocs</div>
+  <form class="search navbar-right" role="search">
+    <input type="text" id="search-box" autocomplete="off" disabled class="form-control typeahead" placeholder="Loading search...">
+  </form>
+</header>
+
+<main>
+
+  <div class="col-xs-6 col-sm-3 col-md-2 sidebar sidebar-offcanvas-left">
+    <h5>class DartDoc</h5>
+    <ol>
+      <li class="section-title"><a href="dartdoc/DartDoc-class.html#constructors">Constructors</a></li>
+      <li><a href="dartdoc/DartDoc/DartDoc.html">DartDoc</a></li>
+    
+      <li class="section-title">
+        <a href="dartdoc/DartDoc-class.html#instance-properties">Properties</a>
+      </li>
+      <li><a href="dartdoc/DartDoc/excludes.html">excludes</a></li>
+      <li><a href="dartdoc/DartDoc/generators.html">generators</a></li>
+      <li><a href="dartdoc/DartDoc/includeExternals.html">includeExternals</a></li>
+      <li><a href="dartdoc/DartDoc/includes.html">includes</a></li>
+      <li><a href="dartdoc/DartDoc/onCheckProgress.html">onCheckProgress</a></li>
+      <li><a href="dartdoc/DartDoc/outputDir.html">outputDir</a></li>
+      <li><a href="dartdoc/DartDoc/packageMeta.html">packageMeta</a></li>
+      <li><a href="dartdoc/DartDoc/rootDir.html">rootDir</a></li>
+      <li><a href="dartdoc/DartDoc/sdkDir.html">sdkDir</a></li>
+      <li><a href="dartdoc/DartDoc/writtenFiles.html">writtenFiles</a></li>
+      <li class="inherited"><a href="dartdoc/DartDoc/hashCode.html">hashCode</a></li>
+      <li class="inherited"><a href="dartdoc/DartDoc/runtimeType.html">runtimeType</a></li>
+    
+      <li class="section-title"><a href="dartdoc/DartDoc-class.html#instance-methods">Methods</a></li>
+      <li><a href="dartdoc/DartDoc/generateDocs.html">generateDocs</a></li>
+      <li><a href="dartdoc/DartDoc/verifyLinks.html">verifyLinks</a></li>
+      <li class="inherited"><a href="dartdoc/DartDoc/noSuchMethod.html">noSuchMethod</a></li>
+      <li class="inherited"><a href="dartdoc/DartDoc/toString.html">toString</a></li>
+    
+      <li class="section-title inherited"><a href="dartdoc/DartDoc-class.html#operators">Operators</a></li>
+      <li class="inherited"><a href="dartdoc/DartDoc/operator_equals.html">operator ==</a></li>
+    
+    
+    
+    </ol>
+  </div><!--/.sidebar-offcanvas-->
+
+  <div class="col-xs-12 col-sm-9 col-md-8 main-content">
+    <section class="multi-line-signature">
+      <span class="returntype">Future&lt;<a href="dartdoc/DartDocResults-class.html">DartDocResults</a>&gt;</span>
+      <span class="name ">generateDocs</span>(<wbr>)
+    </section>
+    <section class="desc markdown">
+      <p>Generate DartDoc documentation.</p>
+<p><a href="dartdoc/DartDocResults-class.html">DartDocResults</a> is returned if dartdoc succeeds. <a href="dartdoc/DartDocFailure-class.html">DartDocFailure</a> is
+thrown if dartdoc fails in an expected way, for example if there is an
+analysis error in the code. Any other exception can be throw if there is an
+unexpected failure.</p>
+    </section>
+    
+    <section class="summary source-code" id="source">
+      <h2><span>Source</span> </h2>
+      <pre class="prettyprint language-dart">Future&lt;DartDocResults&gt; generateDocs() async {
+  _stopwatch = new Stopwatch()..start();
+
+  List&lt;String&gt; files = packageMeta.isSdk
+      ? const []
+      : findFilesToDocumentInPackage(rootDir.path).toList();
+
+  &#47;&#47; TODO(jcollins-g): seems like most of this belongs in the Package constructor
+  List&lt;LibraryElement&gt; libraries = _parseLibraries(files, includeExternals);
+
+  if (includes != null &amp;&amp; includes.isNotEmpty) {
+    Iterable knownLibraryNames = libraries.map((l) =&gt; l.name);
+    Set notFound =
+        new Set.from(includes).difference(new Set.from(knownLibraryNames));
+    if (notFound.isNotEmpty) {
+      throw &#39;Did not find: [${notFound.join(&#39;, &#39;)}] in &#39;
+          &#39;known libraries: [${knownLibraryNames.join(&#39;, &#39;)}]&#39;;
+    }
+    libraries.removeWhere((lib) =&gt; !includes.contains(lib.name));
+  } else {
+    &#47;&#47; remove excluded libraries
+    excludes.forEach((pattern) {
+      libraries.removeWhere((lib) {
+        return lib.name.startsWith(pattern) || lib.name == pattern;
+      });
+    });
+  }
+
+  PackageWarningOptions warningOptions = new PackageWarningOptions();
+  &#47;&#47; TODO(jcollins-g): explode this into detailed command line options.
+  if (config != null &amp;&amp; config.showWarnings) {
+    for (PackageWarning kind in PackageWarning.values) {
+      warningOptions.warn(kind);
+    }
+  }
+  Package package;
+  if (config != null &amp;&amp; config.autoIncludeDependencies) {
+    package = Package.withAutoIncludedDependencies(
+        libraries, packageMeta, warningOptions);
+    libraries = package.libraries.map((l) =&gt; l.element).toList();
+    &#47;&#47; remove excluded libraries again, in case they are picked up through
+    &#47;&#47; dependencies.
+    excludes.forEach((pattern) {
+      libraries.removeWhere((lib) {
+        return lib.name.startsWith(pattern) || lib.name == pattern;
+      });
+    });
+  }
+  package = new Package(libraries, packageMeta, warningOptions);
+
+  &#47;&#47; Go through docs of every model element in package to prebuild the macros index
+  &#47;&#47; TODO(jcollins-g): move index building into a cached-on-demand generation
+  &#47;&#47; like most other bits in [Package].
+  package.allCanonicalModelElements.forEach((m) =&gt; m.documentation);
+
+  &#47;&#47; Create the out directory.
+  if (!outputDir.existsSync()) outputDir.createSync(recursive: true);
+
+  for (var generator in generators) {
+    await generator.generate(package, outputDir);
+    writtenFiles.addAll(generator.writtenFiles.map(path.normalize));
+  }
+
+  verifyLinks(package, outputDir.path);
+  int warnings = package.packageWarningCounter.warningCount;
+  int errors = package.packageWarningCounter.errorCount;
+  if (warnings == 0 &amp;&amp; errors == 0) {
+    print(&quot;\nno issues found&quot;);
+  } else {
+    print(&quot;\nfound ${warnings} ${pluralize(&#39;warning&#39;, warnings)} &quot;
+        &quot;and ${errors} ${pluralize(&#39;error&#39;, errors)}&quot;);
+  }
+
+  double seconds = _stopwatch.elapsedMilliseconds &#47; 1000.0;
+  print(
+      &quot;\ndocumented ${package.libraries.length} librar${package.libraries.length == 1 ? &#39;y&#39; : &#39;ies&#39;} &quot;
+      &quot;in ${seconds.toStringAsFixed(1)} seconds&quot;);
+
+  if (package.libraries.isEmpty) {
+    throw new DartDocFailure(
+        &quot;dartdoc could not find any libraries to document. Run `pub get` and try again.&quot;);
+  }
+
+  if (package.packageWarningCounter.errorCount &gt; 0) {
+    throw new DartDocFailure(&quot;dartdoc encountered errors while processing&quot;);
+  }
+
+  return new DartDocResults(packageMeta, package, outputDir);
+}</pre>
+    </section>
+
+  </div> <!-- /.main-content -->
+
+  <div class="col-xs-6 col-sm-6 col-md-2 sidebar sidebar-offcanvas-right">
+    <h5>method generateDocs</h5>
+  </div><!--/.sidebar-offcanvas-->
+
+</main>
+
+<footer>
+  <span class="no-break">
+    dartdoc 0.12.0
+  </span>
+  &bull;
+  <span class="copyright no-break">
+    <a href="http://creativecommons.org/licenses/by-sa/4.0/">cc license</a>
+  </span>
+
+</footer>
+
+<script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script src="static-assets/typeahead.bundle.min.js"></script>
+<script src="static-assets/prettify.js"></script>
+<script src="static-assets/URI.js"></script>
+<script src="static-assets/script.js"></script>
+
+
+</body>
+
+</html>
